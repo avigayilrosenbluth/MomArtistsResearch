@@ -103,4 +103,15 @@ SET CONCERTTYPE = 'New Jersey Symphony Classical', GUESTS = 'Joshua Bell', DATE 
 WHERE NAME = 'Season Finale with Joshua Bell';
 
 #Now I'll add the concerts that weren't included in the SONGS table
+#First the ones that don't list the conductors. They also don't have guests.
 
+INSERT INTO CONCERTS (NAME, CONCERTTYPE, DATE, TIME, LOCATION)
+VALUES
+	('A Joyful Noise!', 'New Jersey Symphony Family Concert', '2022-12-03', '14:00:00', 'NJPAC in Newark'),
+	('Hooray for Bollywood!', 'New Jersey Symphony Family Concert', '2023-05-13', '14:00:00', 'NJPAC in Newark')
+	;
+
+INSERT INTO CONCERTS (NAME, CONCERTTYPE, CONDUCTOR, DATE, TIME, LOCATION)
+VALUES 
+	('2023 Lunar New Year Celebration', 'Celebration of the Year of the Rabbit', 'Xian Zhang', '2023-01-21', '19:30:00', 'NJPAC in Newark')
+	;

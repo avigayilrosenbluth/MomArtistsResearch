@@ -3,10 +3,11 @@
 CREATE TABLE COMPOSERS (
 	NAME varchar(100) NOT NULL PRIMARY KEY,
 	ERA varchar(100),
+	NATIONALITY varchar(100),
 	SONGS INT 
 	);
 
-#Now I'll insert the data directly from the SONGS table
+#Now I'll insert some data directly from the SONGS table
 
 INSERT INTO COMPOSERS (NAME)
 SELECT DISTINCT COMPOSER
